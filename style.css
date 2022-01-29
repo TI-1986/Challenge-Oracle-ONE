@@ -319,11 +319,11 @@ textarea::placeholder{
 
   footer {
     background: var(--base-color);
-    align-items: center;
+   justify-content: center;
     position: relative;
     width: 19.5rem;
     height: 0rem;
-    left: 29rem;
+    left: 27.9rem;
     top: 33rem;
 
   }
@@ -339,6 +339,7 @@ textarea::placeholder{
     color: var(--bt-color-primary);
     margin-bottom: 0.75rem;
     line-height: 0.5rem;
+    
   }
 
   footer .logo{
@@ -349,19 +350,22 @@ textarea::placeholder{
   footer i{
     font-size: 1.5rem;
     color: var(--bt-color-primary);
-    padding: 0.5rem ;
+    padding: 0.2rem ;
+    
       }
   
   footer .social {
     grid-auto-flow: column;
     width: fit-content;
-    margin: 0 3.2rem 1rem;
+    margin: 1rem 4rem 1rem 5rem;
+    
   }
   
   footer .social a {
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
+    
   }
   
   footer .social a:hover {
