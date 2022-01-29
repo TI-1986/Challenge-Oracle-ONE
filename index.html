@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Oracle One</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo.svg" alt="logo" class="logo" />
+    </header>
+    <div id="container">
+      <section class="form">
+        <textarea type="text" 
+          id="criptografia"
+         placeholder="Digite seu texto aqui!"
+        ></textarea>
+
+        <img src="./assets/info.svg" alt="informando" class="info" />
+        <form action="">
+          <label class="criptografia"
+            >Apenas letras minúsculas e sem acento.</label
+          >
+
+          <button class="btn bt-cripto" type="submit" id="btn-cripto">
+            <span>Criptografar</span>
+          </button>
+
+          <button class="btn bt-descrip" type="submit" id="btn-descripto">
+            <span>Descriptografar</span>
+          </button>
+        </form>
+         
+         
+        <div class="descripto">
+          <textarea class="text-cripto" type="text" id="msg"> </textarea>
+          <button class="bt-copiar" id="copiar" type="submit">
+            <span>Copiar</span>
+          </button>
+        </div>
+
+        <div id="ilustra">
+          <img
+            id="vazio"
+            src="./assets/vazio.svg"
+            alt="sem texto apenas imagem"
+          />
+          <h1 id="sem-texto">Nenhuma mensagem encontrada</h1>
+          <p id="digite">
+            Digite um texto que você deseja <br />
+            ou descriptografar.
+          </p>
+        </div>
+
+      </section>
+    
+
+    <footer class="section">
+      <div class="social grid">
+        <a
+          href="https://www.linkedin.com/in/tiago-de-oliveira-59648b172/"
+          target="_blank"
+        >
+          <i class="icon-linkedin"></i>
+        </a>
+        <a href="https://github.com/TI-1986" target="_blank"
+          ><i class="icon-github"></i>
+        </a>
+      </div>
+      <div class="brand">
+        <p>©2021 por Tiago de Oliveira</p>
+        <p class="logo">Challenge - Oracle + Alura</p>
+      </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
