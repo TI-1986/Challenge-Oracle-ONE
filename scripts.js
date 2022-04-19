@@ -71,8 +71,19 @@ btnCopy.addEventListener('click', function (e) {
   document.execCommand('Cut')
 })
 
+/*  função limpar */
+var btnLimpa = document.getElementById('copiar')
+
+btnLimpa.addEventListener('click', function (e) {
+  e.preventDefault()
+  document.getElementById('criptografia').select()
+  document.execCommand('delete')
+})
+
 /*função oculta/mostra div */
 var btnOcultar = document.getElementById('btn-cripto')
+
+var btnOculta = document.getElementById('btn-descripto')
 
 var btnMostrar = document.getElementById('copiar')
 
@@ -81,6 +92,14 @@ var oculta = document.getElementById('ilustra')
 var mostar = document.getElementById('ilustra')
 
 btnOcultar.addEventListener('click', function () {
+  if (oculta.style.display === 'block') {
+    oculta.style.display = 'none'
+  } else {
+    oculta.style.display = 'none'
+  }
+})
+
+btnOculta.addEventListener('click', function () {
   if (oculta.style.display === 'block') {
     oculta.style.display = 'none'
   } else {
@@ -107,7 +126,7 @@ function checkChar(e) {
   var char = String.fromCharCode(e.keyCode)
 
   console.log(char)
-  var pattern = '[a-z]'
+  var pattern = '[a-z ]'
   if (char.match(pattern)) {
     return true
   }
